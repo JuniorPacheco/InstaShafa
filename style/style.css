@@ -7,11 +7,6 @@
     --fuenteHeading: 'Press Start 2P', cursive;
 }
 
-*, *:before, *:after {
-    box-sizing: inherit; /*Aplica el modelo caja a todos los elementos dle
-    HTML*/
-}
-
 html {
     font-size: 62.5%;
     box-sizing: border-box; /*(Modelo caja)Hace que cuando definamos un 
@@ -19,6 +14,11 @@ html {
     cambiar valores como el padding, border o margin al elemento*/
     font-size: 1.4rem;
     font-family: Helvetica, sans-serif;
+}
+
+*, *:before, *:after {
+    box-sizing: inherit; /*Aplica el modelo caja a todos los elementos dle
+    HTML*/
 }
 
 body {
@@ -65,11 +65,12 @@ a:link {
 
 .nav_search input {
     height: 1.5rem;
-    width: 12rem;
     border: none;
     font-size: 0.7rem;
     background-color: var(--secundario);
     border-radius: 8px;
+    transition: 0.3s ease-in-out display;
+    width: 100%;
 }
 .nav_name {
     max-width: 333.5px;
@@ -79,6 +80,7 @@ a:link {
 
 .nav_search {
     padding: 0rem 1rem;
+    width: 18rem;
 }
 
 .nav__icons {
